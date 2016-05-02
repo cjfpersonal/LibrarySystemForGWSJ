@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd 
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        http://www.springframework.org/schema/util 
+        http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+
+    <!-- 注解扫描包 -->
+    <context:component-scan base-package="com.gwsj.j2ee"></context:component-scan>
+
+    <mvc:resources mapping="/resource/**" location="/resource/" /> 
+
+    <!-- 开启MVC注解,表示SpringMVC支持注解功能 做了很多事情，不包括添加自己定义的拦截器 -->
+	<mvc:annotation-driven>
+		<!-- 返回json数据，@response使用 -->
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+						<value>application/json;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	
+		<!-- 对模型视图名称的解析，即在模型视图名称添加前后缀,默认是webapp目录 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	</bean>
+	
+	<!-- 读取配置文件 -->
+	<bean id="propertyConfigurer"
+         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+         <property name="location">
+                 <value>classpath:filter/dev-filter.properties</value>
+        </property>
+    </bean>
+    
+    
+    <!-- 国际化 -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:messages</value>
+				<value>classpath:errors</value>
+			</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+    
+    
+    
+    <!-- 拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/*" />
+			<!-- 登录拦截器 -->
+			<bean id="loginInterceptor" class="com.gwsj.j2ee.interceptor.LoginInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+		<!-- 本地解析器：读取浏览器的 accept-language 来确定哪个语言区域， 没有找到匹配的语言区域，则使用默认的语言区域 -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver"></bean>
+          
+        
+        
+</beans>
