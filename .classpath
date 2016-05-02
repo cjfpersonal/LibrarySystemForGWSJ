@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/aspectjweaver-1.8.7.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/classmate-1.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/ehcache-core-2.4.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-core-4.3.11.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-ehcache-4.3.11.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-entitymanager-4.3.11.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/hibernate-validator-5.2.2.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jackson-annotations-2.6.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jackson-core-2.6.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jackson-databind-2.6.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/slf4j-api-1.7.13.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/slf4j-log4j12-1.7.13.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-aop-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-beans-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-context-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-core-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-expression-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-jdbc-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-orm-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-test-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-tx-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-web-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/spring-webmvc-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse_work/lib/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
