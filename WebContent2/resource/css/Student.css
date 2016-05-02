@@ -1,0 +1,216 @@
+/* CSS Document */
+@charset "utf-8";
+*{margin:0;padding:0;font-family:Microsoft sarif;}
+ul li{list-style:none;}
+input[type='button'],input[type='submit'],a{cursor:pointer;text-decoration: none;}
+body{
+	overflow-x:hidden;
+}
+.header{
+	background:url("../img/37.jpg") no-repeat 0 0;
+	width:100%;
+	height:90px;
+	min-width:1000px;
+}
+.header p,.header h3{
+	height:90px;
+	color:white;
+	line-height:90px;
+	font-size:30px;
+}
+.header h3{
+	float:left;
+	margin-left:30px;
+}
+.LoginOut a{
+	font-size:20px;
+	color:#FF3300;
+}
+.header p{
+	float:right;
+	margin-right: 30px;
+}
+.Search{
+	background:#d6e9f6;
+	height:50px;
+	width:100%;
+	min-width:1000px;
+}
+.FindBook,.chaxun{
+	float:right;
+	font-size:16px;
+	height:40px;
+	line-height:40px;
+	margin:5px 10px;
+	padding:0 15px;
+	border-radius:5px;
+}
+.body{
+	position:relative;
+	bottom:0px;
+	top:0px;
+	left:0px;right:0px;
+	margin:auto auto;
+}
+.List{
+	width:100%;
+	min-width:900px;
+}
+.List ul li a{
+	float:left;
+	height:48px;
+	line-height:48px;
+	padding:0 8px;
+	border:1px solid #0033FF;
+	border-radius:10px;
+	cursor:pointer;
+	margin-left:2%;
+	font-size:23px;
+}
+.List ul li a:hover,.ListAfter{
+	color:white;
+	background:#0033FF;
+	opacity:0.6;
+	-moz-transition: background 1s,color 1s;
+	-webkit-transition: background 1s,color 1s;
+	-o-transition: background 1s,color 1s;
+	-ms-transition: background 1s,color 1s;
+	transition: background 1s,color 1s;
+	/* border:1px #0033FF; */
+}
+.StudentInformation h2{
+	margin:20px;
+}
+.liebiao{
+	margin-left:5%;
+	width:90%;
+	min-width:1000px;
+	height:500px;
+}
+.neirong{
+	position: relative;
+}
+ .StudentInformation,.BooksControl,.AccountEdit,.BooksReturn,.HistoryRecord{
+	position: absolute;
+	width:100%;
+	margin-top:15px;
+	min-width: 1000px;
+} 
+fieldset{
+	width:96%;
+	min-width:1100px;
+	margin:auto auto;
+	padding-bottom:28px;
+}
+fieldset legend{
+	font-size:23px;
+	margin-left:5%;
+	margin-top:5px;
+	margin-bottom:15px;
+	padding:0 10px;
+}
+.BooksControl,.AccountEdit,.BooksReturn,.HistoryRecord{
+	left:100%;opacity:0;
+}
+.BooksControl{
+
+}
+.BooksReturn{
+
+}
+.AccountEdit{
+
+}
+.History{
+
+}
+/*页面左飞入左飞出*/
+.feichu{
+    -webkit-animation:chu ease-out 0.5s forwards;
+    -moz-animation:chu ease-out 0.5s forwards;
+    -o-animation:chu ease-out 0.5s forwards;
+    animation:chu ease-out 0.5s forwards;
+}
+.feiru{
+    -webkit-animation:ru ease-in 0.5s forwards;
+    -moz-animation:ru ease-in 0.5s forwards;
+    -o-animation:ru ease-in 0.5s forwards;
+    animation:ru ease-in 0.5s forwards;
+}
+@-webkit-keyframes chu{
+    0%{left:0;opacity: 1}
+    100%{left:-100%;opacity: 0;}
+}
+@-moz-keyframes chu{
+    0%{left:0;opacity: 1}
+    100%{left:-100%;opacity: 0;}
+}
+@-o-keyframes chu{
+    0%{left:0;opacity: 1}
+    100%{left:-100%;opacity: 0;}
+}
+@keyframes chu{
+    0%{left:0;opacity: 1}
+    100%{left:-100%;opacity: 0;}
+}
+@-webkit-keyframes ru{
+    0%{left:101%;opacity: 0;}
+    100%{left:0%;opacity:1;}
+}
+@-moz-keyframes ru{
+    0%{left:101%;opacity: 0;}
+    100%{left:0%;opacity:1;}
+}
+@-o-keyframes ru{
+    0%{left:101%;opacity: 0;}
+    100%{left:0%;opacity:1;}
+}
+@keyframes ru{
+    0%{left:101%;opacity: 0;}
+    100%{left:0%;opacity:1;}
+}
+/*页面右飞入右飞出*/
+.feichu2{
+    -webkit-animation:chu2 ease-out 0.5s forwards;
+    -moz-animation:chu2 ease-out 0.5s forwards;
+    -o-animation:chu2 ease-out 0.5s forwards;
+    animation:chu2 ease-out 0.5s forwards;
+}
+.feiru2{
+    -webkit-animation:ru2 ease-in 0.5s forwards;
+    -moz-animation:ru2 ease-in 0.5s forwards;
+    -o-animation:ru2 ease-in 0.5s forwards;
+    animation:ru2 ease-in 0.5s forwards;
+}
+@-webkit-keyframes chu2{
+    0%{left:0;opacity:1;}
+    100%{left:100%;opacity:0;}
+}
+@-moz-keyframes chu2{
+    0%{left:0;opacity:1;}
+    100%{left:100%;opacity:0;}
+}
+@-o-keyframes chu2{
+    0%{left:0;opacity:1;}
+    100%{left:100%;opacity:0;}
+}
+@keyframes chu2{
+    0%{left:0;opacity:1;}
+    100%{left:100%;opacity:0;}
+}
+@-webkit-keyframes ru2{
+    0%{left:-101%;opacity: 0;}
+    100%{left:0%;opacity: 1;}
+}
+@-moz-keyframes ru2{
+    0%{left:-101%;opacity: 0;}
+    100%{left:0%;opacity: 1;}
+}
+@-o-keyframes ru2{
+    0%{left:-101%;opacity: 0;}
+    100%{left:0%;opacity: 1;}
+}
+@keyframes ru2{
+    0%{left:-101%;opacity: 0;}
+    100%{left:0%;opacity: 1;}
+}
